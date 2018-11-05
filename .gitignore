@@ -1,4 +1,6 @@
 modelo/target/
+modelo/.idea/
+modelo/modelo.iml
 pagina/target/
 servicio/target/
 
