@@ -81,12 +81,12 @@ create table documentos (
 );
 
 create table detalles (
-    sec varchar (4),
+    sec int,
     serie varchar(6) not null,
     numero int not null,	
     codigo varchar(20),
     descripcion varchar (100),
-    unidad varchar (4),
+    unidad numeric(10,2),
     valor_unitario numeric (10,2),
     cantidad int,
     isc numeric (8,2),
