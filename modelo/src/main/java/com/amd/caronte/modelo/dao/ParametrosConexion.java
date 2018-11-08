@@ -6,7 +6,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-class ConnectionParams {
+class ParametrosConexion {
    private String tipo;
 
    private String jndi;
@@ -18,7 +18,7 @@ class ConnectionParams {
    private String db;
    private String dbProvider;
 
-   ConnectionParams() throws IOException{
+   ParametrosConexion() throws IOException{
 
        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
        InputStreamReader in = new InputStreamReader(classLoader.getResourceAsStream("db-config.json"));
@@ -74,4 +74,36 @@ class ConnectionParams {
    String getDb() {
        return db;
    }
+
+    void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    void setJndi(String jndi) {
+        this.jndi = jndi;
+    }
+
+    void setIp(String ip) {
+        this.ip = ip;
+    }
+
+    void setPort(String port) {
+        this.port = port;
+    }
+
+    void setUser(String user) {
+        this.user = user;
+    }
+
+    void setPass(String pass) {
+        this.pass = pass;
+    }
+
+    void setDb(String db) {
+        this.db = db;
+    }
+
+    void setDbProvider(String dbProvider) {
+        this.dbProvider = dbProvider;
+    }
 }

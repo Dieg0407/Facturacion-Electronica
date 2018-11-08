@@ -10,8 +10,7 @@
 		1. modelo: Contiene el desarrollo con la lógica del proyecto.
 		2. servicio: Contiene un programa escritorio que utiliza las API creadas en el modelo.
 		3. pagina: Contiene un desarrollo de un visor web utilizado a modo de consola por el usuario.
-		4. migradores: Contiene las implementaciones del módulo de migración del modelo.
-		5. documentos: Contiene los .sql, modelos de datos, certificados, documentación, etc desarrollados.
+		4. documentos: Contiene los .sql, modelos de datos, certificados, documentación, etc desarrollados.
 		  a nivel del modelo o de empresa implementadora.
 
 	* Tecnologías:
