@@ -20,7 +20,8 @@ create table empresa (
     alias varchar (50),
     usuario_secundario varchar (20),
     pass varchar (200),
-    email varchar (100)
+    email varchar (100),
+    web varchar(100)
 );
 
 create table telefonos(
@@ -86,9 +87,9 @@ create table detalles (
     numero int not null,	
     codigo varchar(20),
     descripcion varchar (100),
-    unidad numeric(10,2),
+    unidad varchar (4),
     valor_unitario numeric (10,2),
-    cantidad int,
+    cantidad numeric(10,2),
     isc numeric (8,2),
     cod_isc varchar(4),
     igv numeric (8,2),
@@ -105,7 +106,8 @@ create table envios(
     numero_electronico int,
     fecha_envio char (8),
     archivo blob default null,
-    respuesta blob default null
+    respuesta blob default null,
+    activo boolean default false
 );
 
 create table resumenes (

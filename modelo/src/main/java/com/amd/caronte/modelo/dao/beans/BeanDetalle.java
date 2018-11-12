@@ -12,7 +12,7 @@ public class BeanDetalle implements Serializable {
     private String descripcion;
     private String unidad;
     private double valorUnitario;
-    private int cantidad;
+    private double cantidad;
 
     private double isc;
     private String codIsc;
@@ -79,11 +79,11 @@ public class BeanDetalle implements Serializable {
         this.valorUnitario = valorUnitario;
     }
 
-    public int getCantidad() {
+    public double getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(double cantidad) {
         this.cantidad = cantidad;
     }
 
