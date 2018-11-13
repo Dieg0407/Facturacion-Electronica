@@ -1,6 +1,7 @@
 package com.amd.caronte.modelo.dao.beans;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class BeanEmpresa implements Serializable {
 
@@ -20,7 +21,7 @@ public class BeanEmpresa implements Serializable {
     private String usuarioSecundario;
     private String password;
 
-    private String[] telefonos;
+    private List<String> telefonos;
     private String email;
     private String web;
 
@@ -138,11 +139,11 @@ public class BeanEmpresa implements Serializable {
         this.password = password;
     }
 
-    public String[] getTelefonos() {
+    public List<String> getTelefonos() {
         return telefonos;
     }
 
-    public void setTelefonos(String[] telefonos) {
+    public void setTelefonos(List<String> telefonos) {
         this.telefonos = telefonos;
     }
 

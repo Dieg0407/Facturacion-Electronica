@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class BeanDetalle implements Serializable {
 
-    private String sec;
+    private int sec;
     private String serie;
     private int numero;
 
@@ -23,11 +23,11 @@ public class BeanDetalle implements Serializable {
 
     public BeanDetalle(){}
 
-    public String getSec() {
+    public int getSec() {
         return sec;
     }
 
-    public void setSec(String sec) {
+    public void setSec(int sec) {
         this.sec = sec;
     }
 

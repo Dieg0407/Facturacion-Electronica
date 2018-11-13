@@ -54,6 +54,11 @@ create table estados(
     descripcion varchar (60)
 );
 
+create table rangos(
+	id int,
+    descripcion varchar (60)
+);
+
 create table documentos (
     serie varchar(6) not null,
     numero int not null,
@@ -143,6 +148,9 @@ alter table correlacion
 add foreign key (tipo_doc) references tipos_documentos (tipo_doc);
 
 alter table estados
+add primary key (id);
+
+alter table rangos
 add primary key (id);
 
 alter table documentos
