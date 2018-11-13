@@ -14,13 +14,6 @@ import java.util.Map;
 
 public class DaoFactura implements DaoOrigen {
 
-    public static void main(String[] args){
-
-        String s = "01";
-
-        System.out.print(String.format("%3s",s).replace(' ','0'));
-
-    }
     private Connection conexion;
 
     public DaoFactura(Connection conexion){
