@@ -1,13 +1,13 @@
-package com.amd.caronte.modelo.dao.beans;
+package com.amd.caronte.modelo.beans;
 
 import java.io.Serializable;
 
-public class BeanEstado implements Serializable{
+public class BeanRango implements Serializable {
 
     private int id;
     private String descripcion;
 
-    public BeanEstado(){}
+    public BeanRango(){}
 
     public int getId() {
         return id;

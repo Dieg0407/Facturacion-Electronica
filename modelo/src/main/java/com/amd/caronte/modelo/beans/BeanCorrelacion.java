@@ -1,4 +1,4 @@
-package com.amd.caronte.modelo.dao.beans;
+package com.amd.caronte.modelo.beans;
 
 import java.io.Serializable;
 

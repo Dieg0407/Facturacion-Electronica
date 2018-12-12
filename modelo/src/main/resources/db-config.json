@@ -1,15 +1,16 @@
 {
-  "type-connection" : "server",
+  "tipo" : "local",
 
-  "server-connection":{
+  "servidor":{
     "jndi":"java:/caronte"
   },
-  "program-connection":{
-    "user":"root",
-    "pass":"1234",
-    "ip":"127.0.0.1",
-    "port":"3306",
-    "db":"facturacion_electronica",
-    "db-provider":"mysql"
+  "local":{
+    "usuario":"root",
+    "password":"1234",
+    "url":"127.0.0.1",
+    "puerto":"3306",
+    "bd":"facturacion_electronica",
+    "proveedor":"mysql",
+    "conexiones" : 5
   }
 }
