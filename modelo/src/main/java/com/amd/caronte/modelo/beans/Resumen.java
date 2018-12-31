@@ -2,7 +2,7 @@ package com.amd.caronte.modelo.beans;
 
 import java.io.Serializable;
 
-public class BeanResumen implements Serializable {
+public class Resumen implements Serializable {
 
     private int id;
     private String fechaGeneracion;

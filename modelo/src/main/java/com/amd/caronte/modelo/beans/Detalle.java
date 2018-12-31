@@ -1,27 +1,53 @@
 package com.amd.caronte.modelo.beans;
 
+import com.azoth.eve.anotaciones.CampoTabla;
+import com.azoth.eve.anotaciones.LlavePrimaria;
+import com.azoth.eve.anotaciones.LlavePrimariaCompuesta;
+import com.azoth.eve.anotaciones.NombreTabla;
+
 import java.io.Serializable;
+import java.sql.Types;
 
-public class BeanDetalle implements Serializable {
+@NombreTabla(nombre = "detalles")
+@LlavePrimariaCompuesta
+public class Detalle implements Serializable {
 
+    @LlavePrimaria
+    @CampoTabla(campo = "sec",tipoDato = Types.INTEGER)
     private int sec;
+    @LlavePrimaria
+    @CampoTabla(campo = "serie",tipoDato = Types.VARCHAR)
     private String serie;
+    @LlavePrimaria
+    @CampoTabla(campo = "numero",tipoDato = Types.INTEGER)
     private int numero;
 
+
+    @CampoTabla(campo = "codigo",tipoDato = Types.VARCHAR)
     private String codigo;
+    @CampoTabla(campo = "descripcion",tipoDato = Types.VARCHAR)
     private String descripcion;
+    @CampoTabla(campo = "unidad",tipoDato = Types.VARCHAR)
     private String unidad;
+    @CampoTabla(campo = "valor_unitario",tipoDato = Types.NUMERIC)
     private double valorUnitario;
+    @CampoTabla(campo = "cantidad",tipoDato = Types.NUMERIC)
     private double cantidad;
 
+    @CampoTabla(campo = "isc",tipoDato = Types.NUMERIC)
     private double isc;
+    @CampoTabla(campo = "cod_isc",tipoDato = Types.VARCHAR)
     private String codIsc;
+    @CampoTabla(campo = "igv",tipoDato = Types.NUMERIC)
     private double igv;
+    @CampoTabla(campo = "cod_igv",tipoDato = Types.VARCHAR)
     private String codIgv;
+    @CampoTabla(campo = "otros_tributos",tipoDato = Types.NUMERIC)
     private double otrosTributos;
+    @CampoTabla(campo = "total",tipoDato = Types.NUMERIC)
     private double total;
 
-    public BeanDetalle(){}
+    public Detalle(){}
 
     public int getSec() {
         return sec;

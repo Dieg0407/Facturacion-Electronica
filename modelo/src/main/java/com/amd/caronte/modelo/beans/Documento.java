@@ -1,40 +1,77 @@
 package com.amd.caronte.modelo.beans;
 
+import com.azoth.eve.anotaciones.CampoTabla;
+import com.azoth.eve.anotaciones.LlavePrimaria;
+import com.azoth.eve.anotaciones.LlavePrimariaCompuesta;
+import com.azoth.eve.anotaciones.NombreTabla;
+
 import java.io.Serializable;
+import java.sql.Types;
 
-public class BeanDocumento implements Serializable {
+@NombreTabla(nombre = "documentos")
+@LlavePrimariaCompuesta
+public class Documento implements Serializable {
 
+    @LlavePrimaria
+    @CampoTabla(campo = "serie",tipoDato = Types.VARCHAR)
     private String serie;
+    @LlavePrimaria
+    @CampoTabla(campo = "numero",tipoDato = Types.INTEGER)
     private int numero;
+    @LlavePrimaria
+    @CampoTabla(campo = "tipo_doc",tipoDato = Types.VARCHAR)
     private String tipoDocumento;
 
+    @CampoTabla(campo = "fecha_emision",tipoDato = Types.VARCHAR)
     private String fechaEmision;
+    @CampoTabla(campo = "fecha_vencimiento",tipoDato = Types.VARCHAR)
     private String fechaVencimiento;
 
+
+    @CampoTabla(campo = "tipo_cliente",tipoDato = Types.VARCHAR)
     private String tipoCliente;
+    @CampoTabla(campo = "num_cliente",tipoDato = Types.VARCHAR)
     private String numeroCliente;
+    @CampoTabla(campo = "nom_cliente",tipoDato = Types.VARCHAR)
     private String nombreCliente;
+    @CampoTabla(campo = "direccion",tipoDato = Types.VARCHAR)
     private String direccion;
+    @CampoTabla(campo = "distrito",tipoDato = Types.VARCHAR)
     private String distrito;
+    @CampoTabla(campo = "provincia",tipoDato = Types.VARCHAR)
     private String provincia;
+    @CampoTabla(campo = "departamento",tipoDato = Types.VARCHAR)
     private String departamento;
+    @CampoTabla(campo = "email",tipoDato = Types.VARCHAR)
     private String email;
 
+    @CampoTabla(campo = "venta_afecta",tipoDato = Types.NUMERIC)
     private double ventaAfecta;
+    @CampoTabla(campo = "venta_inafecta",tipoDato = Types.NUMERIC)
     private double ventaInafecta;
+    @CampoTabla(campo = "venta_exonerada",tipoDato = Types.NUMERIC)
     private double ventaExonerada;
 
+    @CampoTabla(campo = "isc",tipoDato = Types.NUMERIC)
     private double isc;
+    @CampoTabla(campo = "cod_isc",tipoDato = Types.VARCHAR)
     private String codIsc;
+    @CampoTabla(campo = "igv",tipoDato = Types.NUMERIC)
     private double igv;
+    @CampoTabla(campo = "cod_igv",tipoDato = Types.VARCHAR)
     private String codIgv;
+    @CampoTabla(campo = "otros_tributos",tipoDato = Types.NUMERIC)
     private double otrosTributos;
+    @CampoTabla(campo = "total",tipoDato = Types.NUMERIC)
     private double total;
 
+
+    @CampoTabla(campo = "id_estado",tipoDato = Types.INTEGER)
     private int estado;
+    @CampoTabla(campo = "id_resumen",tipoDato = Types.INTEGER)
     private int resumen;
 
-    public BeanDocumento(){}
+    public Documento(){}
 
     public String getSerie() {
         return serie;

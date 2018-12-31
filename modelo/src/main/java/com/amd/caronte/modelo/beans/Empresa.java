@@ -3,7 +3,7 @@ package com.amd.caronte.modelo.beans;
 import java.io.Serializable;
 import java.util.List;
 
-public class BeanEmpresa implements Serializable {
+public class Empresa implements Serializable {
 
     private String ruc;
     private String nombre;
@@ -25,7 +25,7 @@ public class BeanEmpresa implements Serializable {
     private String email;
     private String web;
 
-    public BeanEmpresa(){}
+    public Empresa(){}
 
     public String getRuc() {
         return ruc;

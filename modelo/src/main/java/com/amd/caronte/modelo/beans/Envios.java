@@ -2,7 +2,7 @@ package com.amd.caronte.modelo.beans;
 
 import java.io.Serializable;
 
-public class BeanEnvios implements Serializable {
+public class Envios implements Serializable {
 
     private int id;
     private String serie;
@@ -18,7 +18,7 @@ public class BeanEnvios implements Serializable {
 
     private boolean activo;
 
-    public BeanEnvios(){}
+    public Envios(){}
 
     public int getId() {
         return id;

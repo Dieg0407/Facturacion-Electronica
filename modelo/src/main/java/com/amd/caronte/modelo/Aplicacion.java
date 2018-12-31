@@ -17,10 +17,10 @@ public class Aplicacion implements Runnable{
 
     public static void  main(String[] args) {
 
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+            ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
 
-        try(InputStream archivoOrigen = classLoader.getResourceAsStream("origin-config.json");
-            InputStream archivoFacturacion = classLoader.getResourceAsStream("db-config.json")){
+        try(InputStream archivoOrigen = classLoader.getResourceAsStream("db-origen.json");
+            InputStream archivoFacturacion = classLoader.getResourceAsStream("db-facturacion.json")){
 
             origen = new GeneradorConexiones();
             facturacionElectronica = new GeneradorConexiones();
