@@ -127,7 +127,7 @@ create table resumenes (
 );
 
 create table usuarios(
-	id_usuario varchar (10),
+	id varchar (10),
     pass varchar (60),
 	nombres varchar (200),
 	dni char(8),
@@ -173,4 +173,4 @@ alter table detalles
 add primary key(serie,numero,sec);
 
 alter table usuarios
-add primary key (id_usuario);
+add primary key (id);
